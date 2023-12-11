@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Red Hat Display';
+}
+.logo {
+    width: 119px;
+    height: 28px;
+    margin: 80px auto;
+}
+.hidden-img {
+    display: none;
+}
+.flex {
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-cover {
+    width: 370px;
+    height: 310px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+.title {
+    width: 540px;
+    text-align: center;
+}
+h1 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 900;
+    color: #28283D;
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-quote {
+    font-size: 18px;
+    color: #87879D;
+    line-height: 26px;
+    font-weight: 500;
+    width: 540px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+button {
+    font-size: 16px;
+    line-height: 26px;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    margin: 4px;
+    height: 50px;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 25px 0 25px;
+    font-weight: bold;
+}
+.button-hero-left{
+    background-color: #4D96A9;
+}
+.button-hero-right, .footer-button {
+    background-color: #855FB1;
+}
+button:hover {
+    cursor: pointer;
+}
+.button-hero-left:hover {
+    background-color: #71C0D4;
+}
+.button-hero-right:hover, .footer-button:hover {
+    background-color: #B18BDD;
+}
+.version {
+    color: #8FE3F9
+}
+.footer-version {
+    color: #D9B8FF
+}
+.circle {
+    margin: 120px auto 80px auto;
+}
+
+.inner-circle {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #87879D;
+    border-radius: 10000px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.vertical {
+    height: 84px;
+    border: 1px solid #87879D;
+    margin: auto;
+    background-color: #87879D;
+    width: 1px;
+}
+.circle-text {
+    font-size: 16px;
+    color: #87879D;
+    width: 18px;
+    line-height: 26px;
+    margin: 25% auto;
+}
+.gallary-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.img-gallary {
+    width: 100%;
+    height: 242px;
+    border-radius: 10px;
+}
+.last {
+    width: 540px;
+    height: 288px;
+    margin: 50px auto;
+}
+.last-quote {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: #4D96A9;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 0;
+}
+h2 {
+    width: 445px;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 900;
+    color: #28283D;
+    text-align: center;
+    margin: 30px auto;
+}
+.content {
+    width: 600px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #87879D;
+    text-align: center;
+    margin-bottom: 0;
+}
+.circle-two {
+    position: relative;
+    margin-bottom: -30px;
+    z-index: 1;
+}
+#footer {
+    background-image: url("./assets/desktop/image-footer.jpg");
+    height: 308px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 308px;
+    background-color: hsl(192, 37%, 48%, 0.9);
+    margin-bottom: 0;
+}
+.footer-title {
+    width: 340px;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 900;
+    color: #ffffff;
+}
+.footer-quote {
+    width: 320px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    vertical-align: top;
+    color: #ffffff;
+    text-align: left;
+}
+@media (min-width: 1200px){
+
+}
+@media (min-width: 767px) and (max-width: 1199px){
+    #footer {
+        background-image: url(./assets/tablet/image-footer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .flex {
+        justify-content: center;
+        flex-direction: wrap;
+    }
+
+    .hidden-img{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .img-cover {
+        display: none;
+    }
+    .flex , h1, .header-quote{
+        width: 100%;
+        max-width: 100%;
+    }
+    h1 {
+        width: 80%;
+    }
+    .header-quote {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .gallary-container {
+        flex-wrap: inherit;
+    }
+    .img-gallary {
+        width: 164px;
+        height: 156px;
+        width: 100%;
+    }
+    .last, .last-quote, h2 {
+        max-width: 100%;
+    }
+    .content {
+        max-width: 100%;
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #footer, .footer-container {
+        height: 500px;
+    }
+
+    .footer-button, .footer-title, .footer-quote {
+        text-align: center;
+        max-width: 100%;
+    }
+    .footer-quote {
+        width: 75%;
+        margin-top: 0;
+    }
+}
+@media  (max-width: 767px){
+    .hidden-img{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .flex {
+        justify-content: center;
+        flex-direction: wrap;
+    }
+    .img-cover {
+        display: none;
+    }
+    h1 {
+        width: 80%;
+        font-size: 50px;
+        max-width: 100%;;
+    }
+    .flex{
+        width: 100%;
+        max-width: 100%;
+    }
+    .header-quote {
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .gallary-container {
+        flex-wrap: wrap;
+    }
+    .img-gallary {
+        width: 151px;
+        height: 143px;    
+    }
+    .last-quote, h2 {
+        max-width: 100%;
+    }
+    .content {
+        max-width: 95%;
+        width: 100%;
+        margin: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .last {
+        max-width: 90%;
+    }
+    #footer, .footer-container {
+        height: 500px;
+    }
+
+    .footer-button, .footer-title, .footer-quote {
+        text-align: center;
+        max-width: 100%;
+    }
+    .footer-quote {
+        width: 75%;
+        margin-top: 0;
+    }
+
+    #footer {
+        background-image: url(./assets/mobile/image-footer.jpg);
+        background-size: cover;
+    }
+}
+@media (max-width: 375px){
+    .circle-two {
+        margin-top: 50%;
+    }
+}
